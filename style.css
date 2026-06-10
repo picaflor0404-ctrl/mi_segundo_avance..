@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    color:#ff3c00;
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff3c00;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:70px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+button{
+    background:#ff3c00;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:red;
+}
+
+section{
+    padding:80px 8%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:45px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:30px;
+    width:320px;
+    border-radius:20px;
+    transition:.5s;
+    box-shadow:0 0 10px rgba(255,60,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-15px);
+}
+
+.card h3{
+    color:#ff3c00;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+.estadisticas{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.caja{
+    background:#1d1d1d;
+    padding:30px;
+    width:250px;
+    text-align:center;
+    border-radius:20px;
+}
+
+.caja h3{
+    color:#ff3c00;
+    font-size:45px;
+}
+
+.formulario{
+    width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+textarea{
+    height:150px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.formulario{
+    width:100%;
+}
+
+}

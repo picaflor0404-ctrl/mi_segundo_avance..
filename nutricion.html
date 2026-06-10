@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición - FitLife Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">FitLife Gym</h1>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="rutinas.html">Rutinas</a></li>
+            <li><a href="nutricion.html">Nutrición</a></li>
+            <li><a href="pagos.html">Pagos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="nutricion">
+
+    <h2>Planes de Alimentación</h2>
+    <p>Una buena alimentación es la base de tus resultados.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3> Ganar Masa Muscular</h3>
+            <p>Alimentos ricos en proteínas y carbohidratos.</p>
+            <ul>
+                <li>Pollo</li>
+                <li>Arroz</li>
+                <li>Avena</li>
+                <li>Huevos</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3> Bajar de Peso</h3>
+            <p>Dieta equilibrada con déficit calórico.</p>
+            <ul>
+                <li>Frutas</li>
+                <li>Verduras</li>
+                <li>Pescado</li>
+                <li>Agua</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3> Energía y Rendimiento</h3>
+            <p>Alimentos para mejorar tu rendimiento.</p>
+            <ul>
+                <li>Banano</li>
+                <li>Yogurt</li>
+                <li>Frutos secos</li>
+                <li>Avena</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="imc">
+
+    <h2>Calculadora de IMC</h2>
+
+    <div class="card">
+        <input type="number" id="peso" placeholder="Peso (kg)">
+        <input type="number" id="altura" placeholder="Altura (m)">
+        <button onclick="calcularIMC()">Calcular IMC</button>
+
+        <h3 id="resultado"></h3>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 FitLife Gym - Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
