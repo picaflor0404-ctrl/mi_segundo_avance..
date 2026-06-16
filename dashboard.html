@@ -1,121 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard - FitLife Gym</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - FitLife Gym</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
 </head>
 <body>
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav class="dashboard-nav">
+        <h2>🏋️ FitLife Gym</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+            <li><a href="clientes.html">👥 Clientes</a></li>
+            <li><a href="horarios.html">📅 Horarios</a></li>
+            <li><a href="index.html">🏠 Inicio</a></li>
+        </ul>
+    </nav>
 
-<header>
-<nav>
-<h1 class="logo">FitLife Gym</h1>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="planes.html">Planes</a></li>
-<li><a href="rutinas.html">Rutinas</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="dashboard.html">Dashboard</a></li>
-</ul>
-</nav>
-</header>
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main class="dashboard-main">
+        <h1>Panel de Control</h1>
 
-<section>
+        <!-- Tarjetas de métricas -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-info">
+                    <h3>Total Clientes</h3>
+                    <p id="totalClientes">0</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div class="stat-info">
+                    <h3>Total Horarios</h3>
+                    <p id="totalHorarios">0</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-info">
+                    <h3>Clientes Activos</h3>
+                    <p id="clientesActivos">0</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏰</div>
+                <div class="stat-info">
+                    <h3>Horarios Ocupados</h3>
+                    <p id="horariosOcupados">0</p>
+                </div>
+            </div>
+        </section>
 
-<h2>Dashboard</h2>
+        <!-- Acciones rápidas -->
+        <section class="quick-actions">
+            <h2>Acciones Rápidas</h2>
+            <div class="actions-grid">
+                <a href="clientes.html" class="action-btn">➕ Nuevo Cliente</a>
+                <a href="horarios.html" class="action-btn">➕ Nuevo Horario</a>
+                <a href="clientes.html" class="action-btn">📋 Ver Clientes</a>
+                <a href="horarios.html" class="action-btn">📋 Ver Horarios</a>
+            </div>
+        </section>
 
-<div class="cards">
+        <!-- Últimos registros -->
+        <section class="recent-records">
+            <h2>Últimos Clientes Registrados</h2>
+            <div id="ultimosClientes" class="table-container">
+                <p>No hay clientes registrados aún.</p>
+            </div>
+        </section>
+    </main>
 
-<div class="card">
-<h3>👥 Clientes</h3>
-<h1>5000</h1>
-<p>Clientes registrados</p>
-</div>
-
-<div class="card">
-<h3>💪 Entrenadores</h3>
-<h1>15</h1>
-<p>Personal especializado</p>
-</div>
-
-<div class="card">
-<h3>💰 Ingresos</h3>
-<h1>$12,500</h1>
-<p>Ganancias mensuales</p>
-</div>
-
-<div class="card">
-<h3>📦 Membresías</h3>
-<h1>320</h1>
-<p>Planes vendidos</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>🛒 Carrito de Compras</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Plan Premium</h3>
-<p>1 Mes</p>
-<h2>$40</h2>
-<button>Eliminar</button>
-</div>
-
-<div class="card">
-<h3>Plan Elite</h3>
-<p>3 Meses</p>
-<h2>$180</h2>
-<button>Eliminar</button>
-</div>
-
-<div class="card">
-<h3>Total</h3>
-<h1>$220</h1>
-<button>Finalizar Compra</button>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>📅 Horarios de Hoy</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Cardio</h3>
-<p>8:00 AM</p>
-</div>
-
-<div class="card">
-<h3>CrossFit</h3>
-<p>10:00 AM</p>
-</div>
-
-<div class="card">
-<h3>Yoga</h3>
-<p>5:00 PM</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-<p>© 2025 FitLife Gym</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
